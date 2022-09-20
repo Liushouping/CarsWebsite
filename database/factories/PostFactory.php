@@ -13,12 +13,12 @@ class PostFactory extends Factory
     public function definition()
     {
         $images = [
-            'https://i0.wp.com/twgofun.com.tw/wp-content/uploads/2021/09/tn01-0924-1.png?w=1080&ssl=1',
-            'https://i1.wp.com/twgofun.com.tw/wp-content/uploads/2021/03/khc_tr2_001.png?w=1080&ssl=1',
-            'https://i0.wp.com/twgofun.com.tw/wp-content/uploads/2021/03/khc_tr3_001.png?w=1080&ssl=1',
-            'https://i0.wp.com/twgofun.com.tw/wp-content/uploads/2021/02/khc_tr_014-1.png?w=1080&ssl=1',
-            'https://i1.wp.com/twgofun.com.tw/wp-content/uploads/2021/02/khc_tr_002-1.png?w=1080&ssl=1',
-            'https://i1.wp.com/twgofun.com.tw/wp-content/uploads/2021/02/khc_tr_005-1.png?w=1080&ssl=1',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
+            'https://img.asiayo.com/img/banner/banner_202103084706L.png',
         ];
         
         $title = [

@@ -23,6 +23,8 @@
     <meta property="og:url" content="{{ admin_setting('crm_og_url') }}" />
     <meta property="og:site_name" content="{{ admin_setting('crm_og_site_name') }}" />
     <meta property="og:image" content="{{ admin_setting('crm_url') }}storage/{{admin_setting('crm_og_image')}}" />
+
+
 </head>
 <body>
 
@@ -92,7 +94,7 @@
 
     // add our event listener for the click
     btn.addEventListener("click", () => {
-    sidebar.classList.toggle("-translate-x-full");
+        sidebar.classList.toggle("-translate-x-full");
     });
 
 </script>

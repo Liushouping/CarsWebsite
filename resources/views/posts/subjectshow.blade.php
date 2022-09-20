@@ -24,14 +24,14 @@
                 <section class="text-gray-700 text-lg leading-relaxed w-full lg:w-2/3 relative rounded-lg overflow-hidden mt-12">
                 @if (count($posts) >= 1)
                     @foreach ($posts as $post)     
-                    <a href="{{ route('posts.show', [ app()->getLocale() , $post->slug ] ) }}"> 
+                    <a href="{{ route('posts.show', [ app()->getLocale() , $post->slug ] ) }}">
                     <div class="mx-auto bg-white rounded-xl shadow overflow-hidden mb-6 group">
-                            <div class="md:flex">
+                            <div class="md:flex flex-col">
                               <div class="md:flex-shrink-0">
-                                <img class="h-48 w-full object-cover md:w-full" src="{{$post->image_url}}">
+                                <img class="min-h-80 w-full object-cover md:w-full" src="{{$post->image_url}}">
                               </div>
                               <div class="p-8">
-                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{$post->subject->name}}</div>
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-red-600">{{$post->subject->name}}</div>
                                 <h3 class="block mt-1 text-lg leading-tight font-medium text-black group-hover:text-red-600">{{ $post->title }}</h3>
                                 <p class="mt-2 text-gray-500">{!! Str::limit($post->excerpt,100,'...') !!}</p>
                               </div>

@@ -28,7 +28,7 @@ class PostController extends AdminController
             // $grid->column('slug','網址');
             $grid->column('order','排序');
             $grid->column('on_sale','開啟')->switch();
-            $grid->column('content');
+            // $grid->column('content');
             // $grid->column('created_at');
             // $grid->column('updated_at')->sortable();
 

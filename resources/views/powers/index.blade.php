@@ -20,7 +20,7 @@
 
             <div class="flex flex-col lg:flex-row lg:space-x-12">
 
-            <section class="w-full lg:w-1/3 m-auto mt-12 relative px-4 sticky md:top-5">
+            <section class="w-full lg:w-1/3 m-auto mt-12 relative sticky md:top-5">
             <!-- 搜尋 / 篩選 -->
             <div class="flex justify-center items-center mb-12">
                 <div class="w-full rounded-lg">

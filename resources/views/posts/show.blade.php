@@ -43,7 +43,7 @@
                         <hr class="mt-0 mb-10">
                         <div class="flex justify-between text-sm">
                             @if($previous)
-                            <a href="{{ route('posts.show' , [ app()->getLocale() , $previous->slug ] ) }}" class="border border-teal-500 text-teal-500 block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-blue-500 hover:text-white rounded-xl">
+                            <a href="{{ route('posts.show' , [ app()->getLocale() , $previous->slug ] ) }}" class="text-teal-500 block rounded-sm font-bold py-4 px-6 ml-2 flex items-center hover:text-red-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                                 </svg>{{ __('上一則') }}
@@ -51,13 +51,13 @@
                             @else
                             <button class="disabled:opacity-50 rounded-sm font-bold py-4 px-6 mr-2" disabled></button>
                             @endif
-                            <a href="{{ route('posts' , app()->getLocale() ) }}" class="border border-teal-500 text-teal-500 block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-blue-500 hover:text-white rounded-xl">
+                            <a href="{{ route('posts' , app()->getLocale() ) }}" class="block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:text-red-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
                                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                                 </svg>{{ __('列表') }}
                             </a>
                             @if($next)
-                            <a href="{{ route('posts.show' , [ app()->getLocale() , $next->slug ] ) }}" class="border border-teal-500 bg-teal-500 text-teal-500 block rounded-sm font-bold py-4 px-6 ml-2 flex items-center hover:bg-blue-500 hover:text-white rounded-xl">
+                            <a href="{{ route('posts.show' , [ app()->getLocale() , $next->slug ] ) }}" class="text-teal-500 block rounded-sm font-bold py-4 px-6 ml-2 flex items-center hover:text-red-500">
                                 {{ __('下一則') }}<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
